@@ -27,7 +27,7 @@ In this lab, we will be exploring these two sections:
 
 ***INTO THE LAB***
 
-***PART 1: Manual Alert Creation***
+***PART 1: MANUAL ALERT CREATION***
 
 ***Step 1: Query the script in Log Analytics Workspaces***
 
@@ -89,10 +89,7 @@ Entity Mapping comes into play (image above) - You can see the incident that got
 
 ***Step 5: Clean up the and Delete the Rule***
 
-
-
-
-***PART 2: Automatic Alert Import***
+***PART 2: AUTOMATIC ALERT IMPORT***
 
 ***Step 1: Download all of our Sentinel Analytics Rules*** - LeveldCareers Course
 
