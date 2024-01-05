@@ -22,7 +22,6 @@ In this lab, we will be exploring these two sections:
   + Import all of our Sentinel Analytics Rules 
   + Select the “CUSTOM: Brute Force SUCCESS - Windows” Alerts and “Edit” it
   + Copy the query and fully inspect/dissect it in Log Analytics Workspace
-  + Do for the remaining “CUSTOM” Analytics Rules
  
 
 
