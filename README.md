@@ -91,7 +91,7 @@ Entity Mapping comes into play (image above) - You can see the incident that got
 
 ***PART 2: AUTOMATIC ALERT IMPORT***
 
-***Step 1: Download all of our Sentinel Analytics Rules*** - LeveldCareers Course
+***Step 1: Download all of our Sentinel Analytics Rules*** - from LeveldCareers Course
 
 Download the RAW file:
 
