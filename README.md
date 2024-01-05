@@ -19,6 +19,7 @@ In this lab, we will be exploring these two sections:
   + Try to trigger it  
   + Delete the Rule when finished  
 + ***Part 2: Automatic Alert Import***
+  + Import all of our Sentinel Analytics Rules 
   + Select the “CUSTOM: Brute Force SUCCESS - Windows” Alerts and “Edit” it
   + Copy the query and fully inspect/dissect it in Log Analytics Workspace
   + Do for the remaining “CUSTOM” Analytics Rules
@@ -27,7 +28,7 @@ In this lab, we will be exploring these two sections:
 
 ***INTO THE LAB***
 
-***Part 1: Manual Alert Creation***
+***PART 1: Manual Alert Creation***
 
 ***Step 1: Query the script in Log Analytics Workspaces***
 
@@ -88,6 +89,74 @@ We can investigate the Brute Force attempt:
 Entity Mapping comes into play (image above) - You can see the incident that got triggered, the computer (destination host), and the attacker that triggered the incident from the host
 
 ***Step 5: Clean up the and Delete the Rule***
+
+
+
+
+***PART 2: Automatic Alert Import***
+
+***Step 1: Download all of our Sentinel Analytics Rules*** - LeveldCareers Course
+
+Download the RAW file:
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/ffc837ac-ba90-4413-afc3-5e13d59243f4)
+
+***Step 2: Microsoft Sentinel to Import files*** - Imports 13 Rules, all enabled
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/e63da0bb-1a7b-4742-ae55-11507664068b)
+
+***Step 3: Select the “CUSTOM: Brute Force SUCCESS - Windows” Alerts and “Edit” it***
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/381d5b5f-b108-4de1-b027-27b327094c7d)
+
+Copy the Rule Query:
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/90b67afa-be5e-4dbf-908e-89c6385499ea)
+
+Paste into Log Analytics:
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/39697072-bee1-4f67-8e5b-69bbcff6577e)
+
+We could run this query however, no results will be returned because it has not happened yet.
+
+***Step 4: Trigger the alert for “CUSTOM: Brute Force SUCCESS - Windows”*** 
+
+Fail at least 10 times and do 1 Successful one:
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/2a9c6d77-69be-420e-913e-821f204b9043)
+
+Run the Query again:
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/419c3a1a-d8a9-4752-a21d-f8f17a07ca15)
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/c2ea6661-718f-4520-b20e-22b57f2f73b6)
+
+***Notice***  
+DestinationHostName: windows-vm  
+FailureCount: 10  
+SuccessfulCount:1  
+
+***Step 5: Check Microsoft Sentinel Incidents***
+
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/ce5f6ed4-bfc4-4cb7-a961-edc196c0f111)
+
+Brute Force Attempts are shown.
+
+***Lab Fin.***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
