@@ -1,5 +1,7 @@
 # alert-creation-import-sentinel
 
+![image](https://github.com/hoanghuydang/alert-creation-import-sentinel/assets/127445164/faa25c8d-6c06-43e5-ad6d-c423bbf70acf)
+
 ***LAB Precursor:***
 
 It is important to highlight that during the initial deployment, all resources were exposed directly to the internet. 
